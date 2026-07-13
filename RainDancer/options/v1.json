@@ -1,0 +1,30 @@
+{
+    "model_dir": "./exp-nturain/model",
+    "record_dir": "./exp-nturain/record",
+    "log_dir": "./exp-nturain/log",
+    "train_txt_file": "./data/train.txt",
+    "test_txt_file": "./data/test.txt",
+    "log_txt": "./exp-nturain/log.txt",
+    "h5_file": "/path/to/NTURain-v2e/train.h5",
+    "test_h5_file": "/path/to/NTURain-v2e/test.h5",
+    "save_freq": 10,
+    "save_threshold": 50,
+    "print_freq": 5,
+    "train_scene_num": 25,
+    "test_scene_num": 8,
+    "num_bins": 10,
+    "nf": 32,
+    "detach_reset": true,
+    "scale_unetfeats": 32,
+    "sequence_length": 3,
+    "scene_types": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+    ]
+}

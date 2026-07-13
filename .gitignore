@@ -1,0 +1,12 @@
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.log
+**/.DS_Store
+**/outputs/
+**/.ipynb_checkpoints/
+RainDancer/weights/
+RainDancer-s/weights/
+github_upload.log
+lfs-progress.log
+nohup.out
