@@ -177,9 +177,3 @@ Each test run writes:
 - `sample_metrics.csv`
 - `scene_metrics.csv`
 - optional saved images if `--save-images 1`
-
-## Notes
-
-- `NTURain-v2e_real` is not included in this release workflow.
-- The old combined multi-dataset test entry was removed in favor of per-dataset scripts.
-- Historical auxiliary scripts, cached outputs, and unrelated experimental code were removed.
