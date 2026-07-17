@@ -44,18 +44,29 @@ pip install -r requirements.txt
 
 `mmcv` must provide `mmcv.ops.DeformConv2d` for your CUDA and PyTorch version.
 
-## Data and Checkpoints
+## Dataset
 
-This release does not assume your dataset paths.
+Both `RainDancer/` and `RainDancer-s/` use the same released dataset package for all three datasets.
 
-You should provide:
+- Baidu Netdisk: `https://pan.baidu.com/s/1PdOh-vw0fztFE5aqOpVQNQ?pwd=1f9t`
+- Extraction code: `1f9t`
 
-- your own training and test H5 paths
-- your own checkpoint path when testing
+The shared package contains the training and test data for:
 
-This GitHub repository does not include pretrained weights.
+- NTURain-v2e
+- RainSynComplex25
+- RainSynLight25
 
-If you want to follow the suggested local layout, place your checkpoints at:
+After downloading, prepare your own paths for the H5 files used in training and testing.
+
+## Pretrained Weights
+
+This repository does not store pretrained weights directly. The released RainDancer-s weights are provided here:
+
+- Baidu Netdisk: `https://pan.baidu.com/s/1DJnnMPm-Whwnz_v1T6dVgA?pwd=n9gc`
+- Extraction code: `n9gc`
+
+If you want to follow the suggested local layout, place the checkpoints at:
 
 - `weights/nturain/best.pth.tar`
 - `weights/rainsyn-complex25/best.pth.tar`
@@ -63,7 +74,7 @@ If you want to follow the suggested local layout, place your checkpoints at:
 
 You can also keep checkpoints anywhere else and pass the path with `--checkpoint`.
 
-## Training Commands
+## Training
 
 All training scripts write outputs under `outputs/train/...` by default.
 
@@ -111,7 +122,7 @@ Optional variables:
 - `OUTPUT_DIR=/path/to/output_dir`
 - `MASTER_PORT=29512`
 
-## Test Commands
+## Inference
 
 All test scripts write outputs under `outputs/inference/...` by default.
 
