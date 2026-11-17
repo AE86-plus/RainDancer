@@ -44,21 +44,6 @@ pip install -r requirements.txt
 
 `mmcv` must provide `mmcv.ops.DeformConv2d` for your CUDA and PyTorch version.
 
-## Dataset
-
-Both `RainDancer/` and `RainDancer-s/` use the same released dataset package for all three datasets.
-
-- Baidu Netdisk: `https://pan.baidu.com/s/1PdOh-vw0fztFE5aqOpVQNQ?pwd=1f9t`
-- Extraction code: `1f9t`
-
-The shared package contains the training and test data for:
-
-- NTURain-v2e
-- RainSynComplex25
-- RainSynLight25
-
-After downloading, prepare your own paths for the H5 files used in training and testing.
-
 ## Pretrained Weights
 
 This repository does not store pretrained weights directly. The released RainDancer-s weights are provided here:
